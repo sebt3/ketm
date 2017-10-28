@@ -51,6 +51,9 @@ void game_init(int argc, char *argv[])
 		} else if(!strncmp(argv[i-1],"-r5",3)) {
 			scaling=3;
 			WIDTH=360;
+		} else if(!strncmp(argv[i-1],"-m",3) && i+1<=argc) {
+			moddir = argv[i];
+			i++;			
 		} else if(!strncmp(argv[i-1],"-h",2)) {
 			error(ERR_INFO,"%s:  a shoot-em-all game",argv[0]);
 			error(ERR_INFO,"-h:  get this help");
