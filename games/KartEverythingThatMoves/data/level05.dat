@@ -1,0 +1,45 @@
+# ketm - level02
+#
+# command syntax:
+# column 1: game-time in 1/10 sec.
+# column 2: command (T=text, E=enemy)
+# column 3: parameter 1 (T: text to display, E: enemy name)
+# column 4: parameter 2 (T: y-pos, E: difficultiy)
+#
+# columns are separated with pipe ('|')
+# comment start with '#'
+#
+# a BOSS must be the last enemy, after the destruction of BOSSXX
+# the next level is loaded.
+#
+################################################################################
+# Background
+00000|B||1
+00010|T|YOU DID IT!!!|90
+00020|T|YOU'RE A WINNER!!|90
+00060|T|thank you|60
+00062|T|for playing|80
+00064|T|KART EVERYTHING|100
+00065|B||2
+00085|E|CUBE|0
+00100|T|THAT MOVES|80
+00150|T|game engine|60
+00152|T|created by|80
+00154|T|BADBLOCKS|100
+00160|E|CUBE|0
+00200|T|psp port by|80
+00202|T|DENISKA|100
+00250|T|level design by|80
+00252|T|DENISKA|100
+00300|T|graphics by|40
+00302|T|JUAN STUNNA|60
+00304|T|SOUND BY|80
+00306|T|JUAN STUNNA|100
+00320|E|CUBE|0
+00350|T|KART|60
+00352|T|EVERYTHING|80
+00354|T|THAT|100
+00400|T|MOVES|40
+00450|T|PLAY AGAIN!!!|80
+00500|T|good|60
+00502|T|BYE!!!|80

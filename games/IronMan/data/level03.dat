@@ -1,0 +1,63 @@
+# ketm - level02
+#
+# command syntax:
+# column 1: game-time in 1/10 sec.
+# column 2: command (T=text, E=enemy)
+# column 3: parameter 1 (T: text to display, E: enemy name)
+# column 4: parameter 2 (T: y-pos, E: difficultiy)
+#
+# columns are separated with pipe ('|')
+# comment start with '#'
+#
+# a BOSS must be the last enemy, after the destruction of BOSSXX
+# the next level is loaded.
+#
+################################################################################
+# Background
+00000|B||0
+00010|T|excelent|80
+# Introtext
+00040|T|GET READY|100
+00045|T|The Other Elementals Sent|120
+00050|T|In Their Rocket Ship!|140
+# Lets go!
+00080|E|DRAGER|2
+00085|E|DRAGER|2
+00090|E|DRAGER|2
+00100|E|CIR|2
+00130|E|MING|2
+00180|E|GREETER|2
+00230|E|DRAGER|2
+00280|E|GREETER|2
+00330|E|PLASMABALL|3
+00380|E|GREETER|3
+00450|E|CRUSHER|2
+00510|E|ZATAK|2
+00560|E|ZATAK|2
+00560|E|MINE|2
+00590|E|MINE|2
+00630|E|CURVER|2
+00690|E|CURVER|3
+00740|E|RWINGX|2
+00800|E|GREETER|3
+00850|E|GREETER|3
+00900|E|GREETER|3
+00950|E|GREETER|3
+01000|E|CUBE|2
+01060|E|XEV|2
+01090|E|XEV|2
+01120|E|XEV|2
+01150|E|XEV|2
+01200|E|MING|2
+01250|E|MING|2
+01300|E|MING|2
+01350|E|MING|3
+01400|E|MING|3
+01450|E|MING|3
+01500|E|EYEFO|2
+01580|E|EYEFO|2
+01650|E|PROBALL|2
+01710|E|PROBALL|2
+# The Boss...
+01800|T|Rocket BOSS|100
+01840|E|BOSS03|1

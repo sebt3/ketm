@@ -1,0 +1,50 @@
+# ketm - level05
+#
+# command syntax:
+# column 1: game-time in 1/10 sec.
+# column 2: command (T=text, E=enemy)
+# column 3: parameter 1 (T: text to display, E: enemy name)
+# column 4: parameter 2 (T: y-pos, E: difficultiy)
+#
+# columns are separated with pipe ('|')
+# comment start with '#'
+#
+# a BOSS must be the last enemy, after the destruction of BOSSXX
+# the next level is loaded.
+#
+################################################################################
+# Background
+00000|B||1
+00040|T|thank you|60
+00046|T|for playing|80
+00052|T|KETM 1941 mod|100
+00058|T|BY BOURBON BOT|120
+00065|B||2
+00085|E|MINE|0
+00150|T|game engine|60
+00150|7|BGPANEL2|160000
+00152|T|created by|80
+00154|T|BADBLOCKS|100
+00160|E|DRAGER|0
+00200|9|BGPANEL2|300000
+00200|T|psp port by|80
+00202|T|DENISKA|100
+00300|T|Thanks to|40
+00302|T|BADBLOCKS|60
+00304|T|AND|80
+00306|T|DENISKA|100
+00330|E|DRAGER|0
+00350|5|BGPANEL2|020000
+00354|T|SPECIAL THANKS|60
+00360|T|TO DENISKA|80
+00366|T|FOR SUGGESTIONS|100
+00370|T|AND IDEAS|120
+00400|5|BGPANEL2|240000
+00450|T|ALL MUSIC|60
+00456|T|FROM|80
+00462|T|THE MOD ARCHIVES|100
+00510|T|GP2X PORTING|60
+00516|T| BY |80
+00522|T| FAROX |100
+00580|T|( ) { } # * ? =|60
+

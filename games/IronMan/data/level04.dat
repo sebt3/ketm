@@ -1,0 +1,26 @@
+# ketm - level02
+#
+# command syntax:
+# column 1: game-time in 1/10 sec.
+# column 2: command (T=text, E=enemy)
+# column 3: parameter 1 (T: text to display, E: enemy name)
+# column 4: parameter 2 (T: y-pos, E: difficultiy)
+#
+# columns are separated with pipe ('|')
+# comment start with '#'
+#
+# a BOSS must be the last enemy, after the destruction of BOSSXX
+# the next level is loaded.
+#
+################################################################################
+# Background
+00000|B||I
+00040|T|Well Done Tony|40
+00050|T|You Showed Them|60
+00060|T|Looks Like The Other|80
+00070|T|Elementals Are Upset|100
+00080|T|You'll Have To Deal|120
+00090|T|With Them Next TIme|140
+00100|T|But That Will Be|160
+00100|T|Another Day|180
+

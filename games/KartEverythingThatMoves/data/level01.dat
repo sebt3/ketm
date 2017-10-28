@@ -1,0 +1,84 @@
+# ketm - level01
+#
+# command syntax:
+# column 1: game-time in 1/10 sec.
+# column 2: command (T=text, E=enemy)
+# column 3: parameter 1 (T: text to display, E: enemy name)
+# column 4: parameter 2 (T: y-pos, E: difficultiy)
+#
+# columns are separated with pipe ('|')
+# comment start with '#'
+#
+# a BOSS must be the last enemy, after the destruction of BOSSXX
+# the next level is loaded.
+#
+################################################################################
+# Background
+00000|B||1
+# Introtext
+00010|T|GET READY|50
+00015|T|FOR LEVEL 01|80
+00015|B||0
+00020|T|LETS GO!|110
+# Lets go!
+00040|E|GREETER|0
+00060|E|GREETER|0
+00080|E|MING|0
+00090|E|GREETER|0
+00100|E|RWINGX|0
+00100|E|GROUNDER|100
+00104|E|GROUNDER|120
+00108|E|GROUNDER|140
+00110|E|XEV|0
+00120|E|CRUSHER|0
+00130|E|GREETER|0
+00135|E|GREETER|0
+00150|T|WHOO-HOO!!|30
+00155|T|PREPARE FOR PAIN!|80
+00180|E|GREETER|0
+00190|E|ZATAK|0
+00205|E|MING|0
+00220|E|EYEFO|0
+00230|E|GREETER|0
+00250|E|GREETER|0
+00260|E|GREETER|0
+00270|E|GREETER|0
+00280|E|CRUSHER|0
+00290|E|ZATAK|0
+00320|E|MINE|0
+00330|E|MINE|0
+00340|E|CURVER|0
+00350|E|CURVER|0
+00360|E|RWINGX|0
+00370|E|GREETER|0
+00385|E|GREETER|0
+00410|E|GREETER|0
+00420|E|XEV|0
+00440|E|CURVER|0
+00480|E|CUBE|0
+00520|E|XEV|0
+00540|T|CAREFULL!|30
+00545|T|beware of ghosts|80
+00570|E|MINE|0
+00590|E|CURVER|1
+00620|E|CURVER|0
+00640|E|RWINGX|1
+00680|E|DRAGER|0
+00700|E|GREETER|0
+00720|E|MING|0
+00740|E|GREETER|0
+00760|E|GREETER|0
+00780|E|XEV|0
+00800|E|MING|0
+00820|E|XEV|0
+00840|E|MING|0
+00860|E|EYEFO|0
+00880|E|MING|1
+00900|E|EYEFO|0
+00920|E|MING|1
+00940|E|PROBALL|0
+00960|E|DRAGER|1
+00980|E|PROBALL|0
+# The Boss...
+01010|T|I'm-a Wario! I'm-a gonna win!|60
+01050|E|BOSS01|0

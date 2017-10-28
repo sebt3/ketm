@@ -1,0 +1,23 @@
+# ketm - level02
+#
+# command syntax:
+# column 1: game-time in 1/10 sec.
+# column 2: command (T=text, E=enemy)
+# column 3: parameter 1 (T: text to display, E: enemy name)
+# column 4: parameter 2 (T: y-pos, E: difficultiy)
+#
+# columns are separated with pipe ('|')
+# comment start with '#'
+#
+# a BOSS must be the last enemy, after the destruction of BOSSXX
+# the next level is loaded.
+#
+################################################################################
+# Background
+00000|B||I
+00040|T|thank you|60
+00046|T|for playing|80
+00052|T|KETM Star Wars mod|100
+00058|T|BY Jahsg|120
+
+
