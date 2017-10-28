@@ -220,7 +220,7 @@ void error(int errorlevel, char *msg, ...)
 
 SDL_Surface *loadbmp(char *filename)
 {
-	char fn[50];
+	char fn[255];
 	strcpy(fn,moddir);
 	strcat(fn,"/");
 	strcat(fn,filename);
@@ -268,7 +268,7 @@ void unloadbmp_by_surface(SDL_Surface *s)
 
 void unloadbmp_by_name(char *name)
 {
-	char fn[50];
+	char fn[255];
 	strcpy(fn,moddir);
 	strcat(fn,"/");
 	strcat(fn,name);
