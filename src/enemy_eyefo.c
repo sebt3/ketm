@@ -109,11 +109,11 @@ void enemy_eyefo_move(SPRITE *s)
 
 	d->counter+=fps_factor;
 	if(d->counter<300) {
-	    #ifdef GP2X
+	    //#ifdef GP2X
 	    if(d->ycenter<240)  //Farox
-	    #else
+	    /*#else
 		if(d->ycenter<272)  //denis
-		#endif
+		#endif*/
 			d->ycenter+=fps_factor;
 	} else if(d->counter>600) {
 			d->ycenter-=fps_factor;

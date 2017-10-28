@@ -88,13 +88,13 @@ void hsc_show_init()
 		hscsprite[i]=sprite_add(hscsurface[i],1,PR_TEXT,1);
 		hd=mmalloc(sizeof(HSC_DATA));
 		hscsprite[i]->data=hd;
-		#ifdef GP2X
+		//#ifdef GP2X
 		hd->xg=10+(i*4);
 		hd->yg=i*25+120;
-		#else
+		/*#else
 		hd->xg=20+(i*4);
 		hd->yg=i*25+150;
-		#endif
+		#endif*/
 		hd->arrived=0;
 		hd->ph=i%2==0?0:180;
 		hd->phspeed=4;
@@ -104,11 +104,11 @@ void hsc_show_init()
 		hscsprite[i]->flags|=SP_FLAG_VISIBLE;
 		hscsprite[i]->type=SP_ETC;
 		hscsprite[i]->x=0;
-		#ifdef GP2X
+		//#ifdef GP2X
 		hscsprite[i]->y=i*25+60;
-		#else
+		/*#else
 		hscsprite[i]->y=i*25+110;
-		#endif
+		#endif*/
 		hscsprite[i]->mover=hsc_show_move;
 	}
 
@@ -116,13 +116,13 @@ void hsc_show_init()
 	hscsprite[5]=sprite_add(hscsurface[5],1,PR_TEXT,1);
 	hd=mmalloc(sizeof(HSC_DATA));
 	hscsprite[5]->data=hd;
-	#ifdef GP2X
+	//#ifdef GP2X
 	hd->xg=10;
 	hd->yg=90;
-	#else
+	/*#else
 	hd->xg=30;
 	hd->yg=110;
-	#endif
+	#endif*/
 	hd->ph=0;
 	hd->phspeed=5;
 	hd->amp=300;
@@ -131,13 +131,13 @@ void hsc_show_init()
 	hd->dir=0;
 	hscsprite[5]->flags|=SP_FLAG_VISIBLE;
 	hscsprite[5]->type=SP_ETC;
-	#ifdef GP2X
+	//#ifdef GP2X
 	hscsprite[5]->x=10;
 	hscsprite[5]->y=30;
-	#else
+	/*#else
 	hscsprite[5]->x=30;
 	hscsprite[5]->y=50;
-	#endif
+	#endif*/
 	hscsprite[5]->mover=hsc_show_move;
 
 	all_inplace=0;
@@ -440,11 +440,11 @@ void hsc_entry_show()
 	SDL_BlitSurface(back,NULL,screen,NULL);
 
 	r.x=screen->w/2-headline->w/2;
-	#ifdef GP2X
+	//#ifdef GP2X
 	r.y=20;
-	#else
+	/*#else
 	r.y=40;
-	#endif
+	#endif*/
 	r.w=headline->w;
 	r.h=headline->h;
 	SDL_BlitSurface(headline,NULL,screen,&r);
@@ -485,11 +485,11 @@ void hsc_entry_show()
 	}
 
 	r.x=screen->w/2-plate->w/2;
-	#ifdef GP2X
+	//#ifdef GP2X
 	r.y=235-plate->h; // farox
-	#else
+	/*#else
 	r.y=260-plate->h;  //denis
-	#endif
+	#endif*/
 	r.w=plate->w;
 	r.h=plate->h;
 	SDL_BlitSurface(plate,NULL,screen,&r);

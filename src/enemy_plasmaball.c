@@ -82,11 +82,11 @@ void enemy_plasmaball_move(SPRITE *s)
 			break;
 		case 2:
 			d->desty+=50;
-			#ifdef GP2X
+			//#ifdef GP2X
 			if(d->desty>240) //Farox
-			#else
+			/*#else
 			if(d->desty>272) //denis 480
-			#endif
+			#endif*/
 				s->type=-1;
 			else
 				d->state=0;

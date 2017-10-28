@@ -39,17 +39,17 @@ void bonus_add(int x, int y, int type)
 		return;
 	}
 	s->flags|=(SP_FLAG_VISIBLE|SP_FLAG_COLCHECK);
-	#ifdef GP2X
+	//#ifdef GP2X
 	if(x<300) // farox .....to check
 		s->x=x+20;
 	else
 		s->x=x-10;
-	#else
+	/*#else
 	if(x<600)
 		s->x=x+20;
 	else
 		s->x=x-10;
-    #endif
+    #endif*/
 	s->y=y;
 	s->type=type;
 	s->mover=bonus_move;
@@ -63,11 +63,11 @@ void bonus_move(SPRITE *s)
 	BONUS_DATA *d=(BONUS_DATA *)s->data;
 
 	s->y+=d->speed*fps_factor;
-	#ifdef GP2X
+	//#ifdef GP2X
 	if(s->y>240) s->type=-1; //Farox
-	#else
+	/*#else
 	if(s->y>272) s->type=-1; //denis 480
-	#endif
+	#endif*/
 }
 
 void bonus_info_add(int x, int y, char *filename)

@@ -61,10 +61,10 @@ void enemy_drager_move(SPRITE *s)
 		s->x+=-0.6*fps_factor;
 	else
 		s->x+=0.6*fps_factor;
-    #ifdef GP2X
+    //#ifdef GP2X
     if(s->y>240) //Farox
-    #else
+    /*#else
 	if(s->y>272) //denis 480
-	#endif
+	#endif*/
 		s->type=-1;
 }

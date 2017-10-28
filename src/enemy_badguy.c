@@ -40,11 +40,11 @@ void enemy_badguy_add(int lv)
 		data->state=0;
 		data->tx=player->x;
 		data->ty=player->y;
-		#ifdef GP2X
+		//#ifdef GP2X
 		data->speed=fps_factor*((float)(rand()%200)/100)*(3+lv);
-		#else
+		/*#else
 		data->speed=fps_factor*((double)(rand()%200)/100)*(3+lv);
-		#endif
+		#endif*/
 		data->level=lv;
 
 	}

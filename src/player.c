@@ -750,11 +750,7 @@ void player_move_homing(SPRITE *s)
 	int ta;
 	SPRITE *tg=(SPRITE *)b->tgsprite; /* Target-Fadenkreuz */
 	SPRITE *target=NULL;	/* Target */
-	#ifdef GP2X
 	float dangle;
-	#else
-	double dangle;
-	#endif
 
 	switch(b->state) {
 		case 0:	/* Raketen in Ausgangspos. bringen (Sprengkopf nach Norden) */
@@ -934,11 +930,11 @@ void player_add_hlaser(SPRITE *s)
 			c->x=(s->x+s->w/2)-5;
 			c->y=s->y+s->h/2+15;
 			c->flags|=SP_FLAG_VISIBLE;
-			#ifdef GP2X
+			//#ifdef GP2X
 			c->aktframe=5-((float)6/e->max)*i;
-			#else
+			/*#else
 			c->aktframe=5-((double)6/e->max)*i;
-			#endif
+			#endif*/
 			if(i==0) {
 				c->mover=player_move_hlaser;
 				b=mmalloc(sizeof(PL_HLASER_DATA));

@@ -126,11 +126,11 @@ void enemy_proball_move(SPRITE *s)
 			} else {
 				s->x-=d->speed*fps_factor;
 			}
-			#ifdef GP2X
+			//#ifdef GP2X
 			if(s->y>=240) //Farox
-			#else
+			/*#else
 			if(s->y>=272) //denis 480
-			#endif
+			#endif*/
 				// s->type=-1;
 				s->flags&=~SP_FLAG_VISIBLE;
 			break;

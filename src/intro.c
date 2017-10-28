@@ -60,11 +60,11 @@ void intro_work()
 			SDL_BlitSurface(intropic,NULL,screen,NULL);
 			SDL_SetAlpha(ketm_logo, SDL_SRCALPHA, 255);
 			r.x=(WIDTH/2)-(ketm_logo->w/2);
-			#ifdef GP2X
+			//#ifdef GP2X
             r.y=15;
-            #else
+            /*#else
             r.y=30;
-            #endif
+            #endif*/
 			r.w=ketm_logo->w;
 			r.h=ketm_logo->h;
 			SDL_BlitSurface(ketm_logo,NULL,screen,&r);
@@ -104,11 +104,11 @@ void intro_fadein_ketm()
 
 	SDL_SetAlpha(ketm_logo,SDL_SRCALPHA,255-alpha);
 	r.x=(WIDTH/2)-(ketm_logo->w/2);
-	#ifdef GP2X
+	//#ifdef GP2X
 	r.y=15;
-	#else
+	/*#else
 	r.y=30;
-	#endif
+	#endif*/
 	r.w=ketm_logo->w;
 	r.h=ketm_logo->h;
 	SDL_BlitSurface(ketm_logo,NULL,screen,&r);
