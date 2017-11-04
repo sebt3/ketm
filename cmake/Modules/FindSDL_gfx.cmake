@@ -20,6 +20,7 @@
 FIND_PATH(SDLGFX_INCLUDE_DIR SDL_gfxPrimitives.h
   $ENV{SDLGFXDIR}/include
   $ENV{SDLDIR}/include
+  $ENV{SDLDIR}/include/SDL
   ~/Library/Frameworks/SDL_gfx.framework/Headers
   /Library/Frameworks/SDL_gfx.framework/Headers
   /usr/local/include/SDL
